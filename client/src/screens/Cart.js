@@ -1,10 +1,14 @@
 import React from "react";
 import Delete from "@mui/icons-material/Delete";
 import { useCart, useDispatch } from "../components/ContextReducer";
+import { useNavigate } from "react-router-dom";
+
+
 
 export default function Cart() {
   let data = useCart();
   let dispatch = useDispatch();
+  const navigate = useNavigate();
   if (data.length === 0) {
     return (
       <div>
@@ -32,8 +36,8 @@ export default function Cart() {
       console.log("Order Response:", response);
 
       if (response.ok) {
-        // This checks if status is in the 2xx range
-        dispatch({ type: "DROP" });
+        let result = await response.json();
+        navigate("/invoice", { state: { order: data, total: totalPrice } }); // Navigate to invoice page
       } else {
         console.log("Error in order submission:", response.statusText);
       }
