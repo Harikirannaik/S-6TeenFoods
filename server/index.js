@@ -12,7 +12,7 @@ mongoDB();
 
 // CORS configuration
 app.use(cors({
-  origin: ["https://6-teen-foods.vercel.app", "http://localhost:3000"],
+  origin: ["http://localhost:3000"],
   methods: ["POST", "GET", "PUT", "DELETE"],
   credentials: true
 }));

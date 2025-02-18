@@ -20,7 +20,7 @@ export default function Cart() {
       let response = await fetch(`http://localhost:3100/api/orderData`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-type": "application/json",
         },
         body: JSON.stringify({
           order_data: data,

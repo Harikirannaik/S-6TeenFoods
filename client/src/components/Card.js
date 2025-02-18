@@ -1,21 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useDispatch, useCart } from "./ContextReducer";
-import { useNavigate } from 'react-router-dom'
 export default function Card(props) {
   let data = useCart();
   const priceRef = useRef();
   let options = props.options;
   let priceOptions = Object.keys(options);
   const dispatch = useDispatch();
-  let navigate = useNavigate()
   const [qty, setQty] = useState(1);
   const [size, setSize] = useState("");
   
-  const handleClick = () => {
-    if (!localStorage.getItem("token")) {
-      navigate("/login")
-    }
-  }
   const handleQty = (e) => {
     setQty(e.target.value);
   }
@@ -67,7 +60,7 @@ export default function Card(props) {
   // console.log(totval)
   return (
     <div>
-      <div className="card mt-3" style={{ width: "16rem", maxHeight: "360px" }}>
+      <div className="card mt-3" style={{ width: "17rem", maxHeight: "360px" }}>
         <img
           src={props.ImgSrc}
           className="card-img-top"
@@ -81,7 +74,6 @@ export default function Card(props) {
             <select
               className="m-2 h-100 w-20 bg-warning text-black rounded"
               style={{ select: "#FF0000" }}
-              onClick={handleClick}
               onChange={handleQty}
             >
               {Array.from(Array(6), (e, i) => {
@@ -96,7 +88,6 @@ export default function Card(props) {
               className="m-2 h-100 w-20 bg-warning text-black rounded"
               style={{ select: "#FF0000" }}
               ref={priceRef}
-              onClick={handleClick}
               onChange={handleOptions}
             >
               {priceOptions.map((i) => {

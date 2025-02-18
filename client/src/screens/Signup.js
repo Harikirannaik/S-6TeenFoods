@@ -21,7 +21,7 @@ export default function Signup() {
     const response = await fetch(`http://localhost:3100/api/createuser`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-type": "application/json",
       },
       body: JSON.stringify({
         name: credentials.name,
@@ -124,7 +124,7 @@ export default function Signup() {
         </form>
       </div>
       <div>
-        <Footer />
+        <Footer/>
       </div>
     </div>
   );
