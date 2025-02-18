@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for redirection
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function Signup() {
   const [credentials, setCredentials] = useState({
@@ -11,20 +12,16 @@ export default function Signup() {
     location: "",
   });
 
+  const navigate = useNavigate(); // Initialize the useNavigate hook
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(
-      JSON.stringify({
-        name: credentials.name,
-        email: credentials.email,
-        password: credentials.password,
-        location: credentials.location,
-      })
-    );
-    const response = await fetch(`${import.meta.env.REACT_APP_API_BASE_URL}/api/createuser`, {
+
+    // Proceed with creating the user in the database
+    const response = await fetch(`http://localhost:3100/api/createuser`, {
       method: "POST",
       headers: {
-        "content-type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         name: credentials.name,
@@ -33,11 +30,15 @@ export default function Signup() {
         location: credentials.location,
       }),
     });
+
     const json = await response.json();
     console.log(json);
 
-    if (!json.success) {
-      alert("Enter valid credentials");
+    if (json.success) {
+      // Redirect to login page after successful signup
+      navigate("/login");
+    } else {
+      alert("There was an error with the registration. Please try again.");
     }
   };
 
@@ -114,13 +115,16 @@ export default function Signup() {
           <button type="submit" className="btn btn-success">
             Submit
           </button>
-          <Link to="/login" className="m-3 btn btn-warning">
-            Already a user
-          </Link>
+          <p className="m-3">
+            Already a user?{" "}
+            <Link to="/login" className="btn btn-warning">
+              Login here
+            </Link>
+          </p>
         </form>
       </div>
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ export default function Login() {
         password: credentials.password,
       })
     );
-    const response = await fetch(`${import.meta.env.REACT_APP_API_BASE_URL}/api/login`, {
+    const response = await fetch(`http://localhost:3100/api/login`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -38,7 +38,7 @@ export default function Login() {
     if (json.success) {
       localStorage.setItem("userEmail", credentials.email);
       localStorage.setItem("authToken", json.authToken);
-      console.log(localStorage.getItem("authToken"));
+      console.log("Token saved:", localStorage.getItem("authToken"));
       navigate("/");
     }
   };
@@ -83,7 +83,7 @@ export default function Login() {
           </div>
 
           <button type="submit" className="btn btn-success">
-            Submit
+            Login
           </button>
           <Link to="/signup" className="m-3 btn btn-warning">
             I'm a new user

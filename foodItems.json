@@ -1,0 +1,99 @@
+[
+    {
+      "_id": "66fc1255e2c508231a0d8b03",
+      "CategoryName": "Biryani/Rice",
+      "name": "Chicken Biryani",
+      "img": "https://cdn.pixabay.com/photo/2019/11/04/12/16/rice-4601049__340.jpg",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b02",
+      "CategoryName": "Biryani/Rice",
+      "name": "Fish Biryani",
+      "img": "https://media.istockphoto.com/photos/king-fish-biryani-with-raita-served.jpg",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b00",
+      "CategoryName": "Biryani/Rice",
+      "name": "Chicken Fried Rice",
+      "img": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-1.2.1",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b04",
+      "CategoryName": "Biryani/Rice",
+      "name": "Veg Biryani",
+      "img": "https://media.istockphoto.com/photos/veg-biryani-picture-id1363306527.jpg",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b07",
+      "CategoryName": "Starter",
+      "name": "Paneer 65",
+      "img": "https://media.istockphoto.com/photos/paneer-tikka-kabab-in-red-sauce.jpg",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b0a",
+      "CategoryName": "Pizza",
+      "name": "Chicken Cheese Pizza",
+      "img": "https://media.istockphoto.com/photos/double-topping-pizza-on-the-wooden.jpg",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b05",
+      "CategoryName": "Biryani/Rice",
+      "name": "Prawns Fried Rice",
+      "img": "https://cdn.pixabay.com/photo/2018/03/23/08/27/thai-fried-rice-3253027.jpg",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b08",
+      "CategoryName": "Starter",
+      "name": "Chicken Tikka",
+      "img": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-1.2.1",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b09",
+      "CategoryName": "Starter",
+      "name": "Paneer Tikka",
+      "img": "https://media.istockphoto.com/photos/paneer-tikka-at-skewers-in-black.jpg",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b01",
+      "CategoryName": "Biryani/Rice",
+      "name": "Veg Fried Rice",
+      "img": "https://images.unsplash.com/photo-1645177628172-a94c1f96e6db?ixlib=rb-1.2.1",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b0b",
+      "CategoryName": "Pizza",
+      "name": "Mix Veg Pizza",
+      "img": "https://media.istockphoto.com/photos/chinese-food-veg-pizza.jpg",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    },
+    {
+      "_id": "66fc1255e2c508231a0d8b06",
+      "CategoryName": "Starter",
+      "name": "Chilli Paneer",
+      "img": "https://media.istockphoto.com/photos/spicy-paneer-or-chilli-paneer.jpg",
+      "options": [],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer…"
+    }
+  ]
+  
